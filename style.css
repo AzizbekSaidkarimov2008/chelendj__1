@@ -1,0 +1,398 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: linear 0.0000001s;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  background: url(./img/car_racing_background_dark_design_speedometer_icon_6830964.jpg)
+    no-repeat;
+  background-size: cover;
+  font-family: "Faster One", cursive;
+  /* width: 100%; */
+  /* height: 300px; */
+}
+.bosh {
+  background: grey;
+  /* position: absolute; */
+  left: -100px;
+  z-index: -1;
+  width: 100%;
+}
+.img {
+  position: absolute;
+  left: 0;
+}
+
+.img img {
+  width: 300px;
+  height: 300px;
+}
+
+.fa-redo-alt {
+  font-size: 25px;
+  z-index: 1000000000000;
+  color: #fff;
+}
+
+.index {
+  z-index: 10000000000;
+}
+
+.giflar {
+  display: none;
+  position: absolute;
+  width: 225px;
+  /* flex-direction: column; */
+}
+
+/* .gif{
+  display: block;
+  position: absolute;
+  right: 0;
+} */
+
+.gif {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+}
+
+#map {
+  position: relative !important;
+  /* border: 1px solid #000; */
+  width: 100%;
+  /* height: 300px; */
+  display: flex;
+  justify-content: center;
+  margin-top: 296px;
+  /* background: url(./img/403429.png) !important; */
+  z-index: -10;
+}
+
+#map1 {
+  position: relative;
+  /* background: url(./img/roads-clipart-banner-4.jpg) no-repeat; */
+  /* background-size: cover; */
+  background-color: #292929;
+  /* transform: rotate(90deg); */
+  /* width: 1054px; */
+  /* height: 464px; */
+  width: 464px;
+  height: 1054px;
+  overflow: hidden;
+  display: none;
+  /* margin-top: -86px; */
+  margin-top: -296px;
+  z-index: -10000;
+}
+
+#player {
+  position: absolute;
+  /* background: url(./cartaxi.png) no-repeat; */
+  width: 100px;
+  height: 100px;
+  transform: rotate(90deg);
+  /* margin-right: 20px; */
+  /* margin-left: 575px; */
+  /* border: 1px solid red; */
+  margin-top: 407px;
+  /* z-index: -10; */
+  display: none;
+}
+
+.car {
+  position: absolute;
+  width: 100px;
+  height: 52px;
+  z-index: 1000000;
+  transform: rotate(90deg);
+  z-index: -100000;
+}
+
+#car1 {
+  top: -100px;
+  left: 60%;
+  /* background-color: #26c5ff; */
+}
+
+#car2 {
+  top: -200px;
+  left: 40%;
+
+  /* background-color: #26c5ff; */
+}
+
+#car3 {
+  top: -350px;
+  left: 50%;
+
+  /* background-color: #26c5ff; */
+}
+
+.line {
+  /* background: #fff;
+    display: block;
+    position: absolute; */
+  /* transform: translateX(50%); */
+  /* transform: rotate(90deg); */
+  /* right: 50%; */
+  /* width: 15px; */
+  /* height: 40px; */
+  /* position: absolute;
+    height: 150px;
+    width: 4%;
+    margin-left: 48%;
+    background-color: rgba(255,255,255,0.5); */
+  position: absolute;
+  height: 150px;
+  width: 4%;
+  margin-left: 48%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: -100000;
+  animation: key 1s linear infinite;
+  /* margin-top: 407px; */
+}
+
+@keyframes key {
+  10% {
+    margin-top: 35px;
+  }
+
+  20% {
+    margin-top: 55px;
+  }
+
+  30% {
+    margin-top: 85px;
+  }
+
+  40% {
+    margin-top: 125px;
+  }
+
+  50% {
+    margin-top: 155px;
+  }
+
+  60% {
+    margin-top: 185px;
+  }
+
+  70% {
+    margin-top: 215px;
+  }
+
+  80% {
+    margin-top: 245px;
+  }
+
+  90% {
+    margin-top: 275px;
+  }
+
+  100% {
+    margin-top: 305px;
+  }
+
+  /* 0%{
+    transform: rotate(0);
+    margin-top: 100px;
+  }
+  100%{
+    transform: rotate(180deg);
+    
+  } */
+}
+
+#line1 {
+  top: -150px !important;
+}
+
+#line2 {
+  top: 150px !important;
+}
+
+#line3 {
+  top: 450px !important;
+}
+
+#line4 {
+  top: 750px !important;
+}
+
+#line5 {
+  top: 1100px !important;
+}
+
+#line6 {
+  width: 464px;
+  height: 1054px;
+  color: #fff !important;
+}
+
+#restart_div {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #292929;
+  color: white;
+  font-family: sans-serif;
+  font-size: 40px;
+  text-align: center;
+  display: none;
+  padding-top: 50%;
+}
+
+#restart {
+  border: none;
+  padding: 25px;
+  color: white;
+  background-color: #8a64ff;
+  font-size: 30px;
+  margin-top: 30%;
+  width: 300px;
+  margin: auto;
+  display: block;
+}
+
+.small_text {
+  font-size: 15px;
+}
+
+#score_div {
+  position: absolute;
+  /* margin-top: 20%;
+  margin-left: 10%; */
+  font-size: 35px;
+  background-color: white;
+  text-align: center;
+  color: #454545;
+  padding: 10px;
+  width: 100%;
+  z-index: 10000;
+  box-shadow: 0px 4px 0px 1px #808080;
+}
+
+#help {
+  text-align: center;
+}
+
+#donate {
+  position: absolute;
+  right: 10px;
+  top: 25px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 12px;
+}
+
+.yulduz {
+  color: grey;
+  font-size: 50px;
+  display: block;
+}
+.game_over {
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.btn_otasi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn_otasi1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #314755 0%,
+    #26a0da 51%,
+    #314755 100%
+  );
+}
+.btn-grad {
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #000;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-grad:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.yondan1 {
+  position: absolute;
+  left: -360px;
+}
+.yondan2 {
+  position: absolute;
+  left: -360px;
+}
+.yondan3 {
+  position: absolute;
+  left: -360px;
+}
+
+.plus_on {
+  position: absolute;
+  right: 30%;
+  top: 53%;
+  z-index: 100000000000000;
+  color: #fff;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: none;
+}
+
+.sekin {
+  display: none;
+}
+.ortacha {
+  display: none;
+}
+.tez {
+  display: none;
+}
+
+.finish123 {
+  position: absolute;
+  top: -1000px;
+  background: green;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000000000000000000;
+}
+
+.svg {
+  display: block;
+  width: 500px;
+  height: 500px;
+  /* transform: translateX(50%) ; */
+  margin: auto;
+  /* right: 50%; */
+}
+
+.sekin12123123 {
+  margin: auto;
+}
